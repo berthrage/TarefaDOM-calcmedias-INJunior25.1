@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+:root {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    background-color: var(--dark-blue);
+    --footer-grey: rgb(236, 236, 236);
+    --darker-grey: #3f3f3f;
+    --dark-blue: rgb(0, 20, 39);
+    --highlight-yellow: #DEB959;
+    --highlight-yellow-hovered: #AA8D43;
+}
+
+button {
+    border: none;
+    padding: 10px 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.5s;
+    border-radius: 5px;
+    width: 90px
+}
+
+button:hover {
+    background-color: #a1a1a1;
+}
+
+input {
+    border: 1px solid var(--darker-grey);
+    border-radius: 8px;
+    height: 50%;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+textarea {
+    border: 1px solid var(--darker-grey);
+    resize: none;
+    border-radius: 8px;
+    height: 110px;
+    width: 86%;
+    padding: 10px 10px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-area {
+    color: black;
+    background-color: var(--footer-grey);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-area h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.input-submit-area {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-submit-area p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.textarea-button-area {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#calculate-avg-button {
+    background-color: var(--highlight-yellow);
+}
+
+#calculate-avg-button:hover {
+    background-color: var(--highlight-yellow-hovered);
+}

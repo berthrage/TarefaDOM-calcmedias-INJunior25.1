@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Médias - Leandro Bertholdo</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script type="module" src="./calculateavg.js"></script>
 </head>
 <body>
-    <div class="title-area">
-        <h1>CALCULADORA DE MÉDIAS</h1>
-        <p id="subtitle">Tarefa DOM Processo Seletivo INJunior 2025.1</p>
-    </div>
+    <header>
+        <section class="title-area">
+            <h1>CALCULADORA DE MÉDIAS</h1>
+            <div>
+                <p id="subtitle">Tarefa DOM Processo Seletivo INJunior 2025.1</p>
+                <p id="subtitle-name">Leandro Bertholdo</p>
+            </div>
+        </section>
+    </header>
 
-    <div class="input-submit-area">
-        <p>Nota: </p>
-        <input id="note-input" type="text" placeholder="Digite sua nota aqui">
-        <button id="note-submit-button" type="button">Adicionar</button>
-    </div>
+    <main>
+        <section class="calculator"> 
+            <section class="input-submit-area">
+                <p>Nota: </p>
+                <input id="score-input" type="text" placeholder="Digite sua nota aqui">
+                <button id="score-submit-button" type="button">Adicionar</button>
+            </section>
 
-    <div class="textarea-button-area">
-        <textarea id="notes-text"readonly></textarea>
-        <button id="calculate-avg-button" type="button">Calcular Média</button>
-    </div>
+            <section class="textarea-button-area">
+                <textarea id="scores-text"readonly></textarea>
+                <button id="calculate-avg-button" type="button">Calcular Média</button>
+                <p id="result"></p>
+            </section>
+        </section>
+    </main>
     
 </body>
 </html>
