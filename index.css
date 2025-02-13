@@ -11,9 +11,9 @@
     background-color: var(--dark-blue);
     --footer-grey: rgb(236, 236, 236);
     --darker-grey: #3f3f3f;
-    --dark-blue: rgb(0, 20, 39);
+    --dark-blue: rgb(0, 11, 20);
     --highlight-yellow: #DEB959;
-    --highlight-yellow-hovered: #AA8D43;
+    --highlight-yellow-hovered: #3b3118;
 }
 
 button {
@@ -39,6 +39,12 @@ input {
     height: 50%;
     width: 50%;
     padding: 10px 10px;
+    background-color: rgb(0, 1, 15);
+    color: white;
+}
+
+input::placeholder {
+    color: rgb(167, 167, 167);
 }
 
 textarea {
@@ -51,6 +57,8 @@ textarea {
     font-family: "Darker Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 500;
+    background-color: rgb(0, 1, 15);
+    color: white;
 }
 
 .title-area {
@@ -62,9 +70,26 @@ textarea {
     align-items: center;
 }
 
+.title-area #title {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.title-area img {
+    width: 32px;
+    height: 32px;
+}
+
 .title-area h1 {
     font-size: 34px;
     letter-spacing: 2px;
+}
+
+.title-area div {
+    display: flex;
+    flex-direction: column;
+    gap: -4px;
 }
 
 
@@ -89,7 +114,7 @@ main {
 .input-submit-area {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 69%;
     justify-content: center;
     gap: 10px;
 }
@@ -97,6 +122,15 @@ main {
 .input-submit-area p {
     font-weight: bold;
     font-size: 22px;
+}
+
+.input-submit-area button {
+    color: white;
+    background-color: rgb(39, 40, 61);
+}
+
+.input-submit-area button:hover {
+    background-color: rgb(15, 16, 24);
 }
 
 .textarea-button-area {
@@ -113,4 +147,5 @@ main {
 
 #calculate-avg-button:hover {
     background-color: var(--highlight-yellow-hovered);
+    color: white;
 }
