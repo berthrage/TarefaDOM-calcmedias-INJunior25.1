@@ -3,6 +3,12 @@ let scores = []
 function AddScore() {
     let textArea = document.querySelector("#scores-text");
     let scoreInputUnfiltered = document.querySelector("#score-input").value;
+
+    if (scoreInputUnfiltered === "") {
+        alert("Por favor, insira uma nota");
+        return;
+    }
+
     let scoreInputFiltered = scoreInputUnfiltered.replace(",", ".");
     let scoreInput = parseFloat(scoreInputFiltered);
 
